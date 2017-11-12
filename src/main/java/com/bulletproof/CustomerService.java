@@ -8,6 +8,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value = "/")
 public class CustomerService {
 
+    /**
+     * Api to psot data to rest endpoint.
+     * 
+     * @return
+     */
     @RequestMapping(value = "/rest/customer", method = RequestMethod.POST)
     public String getAllCustomers() {
 	return CsvJsonApplication.jsonCustomer.toString();
